@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    flex-basis: 50%;
+    height: 5%;
+}
 body {
     width: 100%;
 }
@@ -10,6 +16,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: content;
 }
 .container {
     background: #C4C4C4;
@@ -17,10 +26,9 @@ body {
     height: 925px;
     display: flex;
     flex-wrap: wrap;
-    margin: 10vh 0px 0px;
+    margin: 0px 0px 0px;
     align-content: space-around;
     justify-content: space-around;
-
 }
 .red {
     background: #F54242;
@@ -102,5 +110,9 @@ body {
     .yellow {
         height: 25%;
         margin: 5%;
+    }
+    .name {
+        flex-wrap: wrap-reverse;
+        align-content: flex-start;
     }
 }
